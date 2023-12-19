@@ -110,14 +110,14 @@ body {
 }
 
 .weather-box .box .info-weather{
-  transform: translateY(-120%);
+  transform: translateY(-140%);
 }
 
 .container.active .weather-box .box .info-weather,
 .container.active .weather-details .humidity .info-humidity,
 .container.active .weather-details .wind .info-wind{
   transform: translateY(0%);
-  transition: transfrom 1s ease;
+  transition: transform 1s ease;
 }
 
 .weather-box img {
@@ -170,7 +170,7 @@ body {
 
 .weather-details .humidity .info-humidity,
 .weather-details .wind .info-wind{
-  transform: translateY(-100%);
+  transform: translateY(-120%);
   overflow: hidden;
 }
 
