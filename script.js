@@ -5,6 +5,8 @@ const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 const cityHide = document.querySelector(".city-hide");
 
+let audio = new Audio('./audios/mixkit-heavy-rain-2403.wav')
+
 search.addEventListener("click", (e) => {
   e.preventDefault();
   const APIKey = "96b947a45d33d7dc1c49af3203966408";
@@ -57,6 +59,7 @@ search.addEventListener("click", (e) => {
 
           case "Rain":
             image.src = "images/rain.png";
+            audio.play()
             break;
 
           case "Snow":
@@ -132,5 +135,5 @@ search.addEventListener("click", (e) => {
         }
       }
     });
-  search.reset();
+  search.reset()
 });
